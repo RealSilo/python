@@ -1,4 +1,4 @@
-# With classes
+# with classes
 class Report:
     def generate_report(self):
         self.retrieve_data()
@@ -25,13 +25,11 @@ class HTMLReport(Report):
         print('HTML formatting!')
 
 
-print(TextReport().generate_report())
-print(HTMLReport().generate_report())
-
-print('----------------------------')
+# TextReport().generate_report()
+# HTMLReport().generate_report()
 
 
-# With higher order functions:
+# with higher-order functions:
 def text_format():
     print('Text formatting!')
 
@@ -52,5 +50,14 @@ def generate_report(format_report):
     send_report()
 
 
-print(generate_report(text_format))
-print(generate_report(html_format))
+# generate_report(text_format)
+# generate_report(html_format)
+
+if __name__ == '__main__':
+    print(TextReport().generate_report())
+    print(HTMLReport().generate_report())
+
+    print('----------------------------')
+
+    print(generate_report(text_format))
+    print(generate_report(html_format))
