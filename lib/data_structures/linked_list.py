@@ -49,9 +49,10 @@ class LinkedList:
         return None
 
 
-linked_list = LinkedList(1)
-linked_list.add(2)
-linked_list.add(3)
-linked_list.add(4)
-linked_list.remove(3)
-print(linked_list.find(4).data, linked_list.size)
+if __name__ == '__main__':
+    linked_list = LinkedList(1)
+    linked_list.add(2)
+    linked_list.add(3)
+    linked_list.add(4)
+    linked_list.remove(3)
+    print(linked_list.find(4).data, linked_list.size)

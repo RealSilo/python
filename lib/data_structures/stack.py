@@ -19,9 +19,10 @@ class Stack:
         return self.store.__len__()
 
 
-s = Stack()
-s.push(5)
-s.push(3)
-print(s.pop())
-print(s.store)
-print(s.peek())
+if __name__ == '__main__':
+    s = Stack()
+    s.push(5)
+    s.push(3)
+    print(s.pop())
+    print(s.store)
+    print(s.peek())
