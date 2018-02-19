@@ -1,3 +1,29 @@
+# problem
+def report(output_format):
+    print('Data retrieved!')
+    if output_format == 'text':
+        print('Text formatting')
+    elif output_format == 'html':
+        print('Html formatting')
+    else:
+        raise TypeError('Invalid type')
+    print('Report sent!')
+
+
+# what if it is more complex
+def complex_report(output_format):
+    print('Data retrieved!')
+    if output_format == 'text':
+        print('Text formatting')
+    elif output_format == 'html':
+        print('Html formatting')
+    elif output_format == 'pdf':
+        print('Pdf formatting')
+    else:
+        raise TypeError('Invalid type')
+    print('Report sent!')
+
+
 # with classes
 class Report:
     def generate_report(self):
@@ -17,12 +43,12 @@ class Report:
 
 class TextReport(Report):
     def format_report(self):
-        print('Text formatting!')
+        print('Text formatted!')
 
 
 class HTMLReport(Report):
     def format_report(self):
-        print('HTML formatting!')
+        print('HTML formatted!')
 
 
 # TextReport().generate_report()
